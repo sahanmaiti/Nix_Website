@@ -1,0 +1,29 @@
+{
+  "summary": "Frontend-only Playwright testing of the Nix macOS launch landing page on the public REACT_APP_BACKEND_URL. All 12 required sections render, hero headline + CTAs + macOS mockup present, nav anchor links scroll correctly, FAQ accordion (7 items) expands on click, 8 feature cards present, 3 testimonials present (testid uses 'testimonial-{i}', not the 'testimonial-card-{i}' pattern listed in the request), 4 privacy items, download CTAs clickable and routing to #download. Strict black/white palette is honoured (only deliberate macOS traffic-light dots use color, which is expected). No console errors. One real responsive issue: horizontal overflow at 375px viewport (scrollWidth=490 vs clientWidth=375) caused by the BuiltForMac section's Swift code block / 'lg:col-span-5' headline area not constraining width on small screens.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "BuiltForMac (built-section)", "issue": "Horizontal page scroll appears at 375px viewport (scrollWidth=490, clientWidth=375). Offending children include a 'lg:col-span-5' headline block (~470px wide) and decorative absolutely-positioned glow divs (-right-20 / -right-24). Code <pre> block likely also forces min-width on mobile. Need overflow-x-hidden on section/root and overflow-x-auto + word-break on the code block; tighten negative-inset decoratives at sm breakpoint.", "selector": "[data-testid=\"built-section\"]", "priority": "HIGH"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Hero/HeroMockup", "issues": ["macOS traffic light dots (#ff5f56/#ffbd2e/#27c93f) are the only non-grayscale colors in the page — this is intentional/correct for an Apple-style mockup, NOT a palette violation. Flagging here only so it is not mistaken for one."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Fix horizontal scroll at 375px in built-section: add 'overflow-x-hidden' to the section, wrap <pre>/code with 'overflow-x-auto' + 'whitespace-pre' inside a constrained parent, and gate decorative '-right-20'/'-right-24' blurs behind sm:/md: prefixes.",
+    "Optional: align testid naming with the request spec — rename 'testimonial-{i}' to 'testimonial-card-{i}' in Testimonials.jsx (cards exist and render correctly, only the attribute name differs from the spec)."
+  ],
+  "critical_code_review_comments": [
+    "Decorative absolutely-positioned elements use negative insets (-right-20/-right-24, -inset-x-20) without an overflow-x-hidden wrapper, causing layout overflow at narrow viewports.",
+    "Testimonials testid does not match the spec's 'testimonial-card-{i}' convention — minor but worth aligning for downstream test stability."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "94%"},
+  "seed_data_creation": "None",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "All 12 sections, hero CTAs, nav anchors (#features/#how/#why/#faq scroll to scrollY 2932/.../6700), FAQ 7-item accordion, 8 feature cards, 4 privacy items, 3 testimonials (testid 'testimonial-{i}'), download CTAs all verified working. 0 console errors. Only outstanding issue: horizontal overflow on 375px wide screens originating from built-section (Swift code block + decorative glows). Desktop 1440 and tablet 768 are clean.",
+  "rca of the issue": "At 375px viewport, document.scrollWidth=490 while clientWidth=375. Traversal of overflowing elements shows offenders inside the BuiltForMac section: (a) decorative absolute divs with class '-right-20 h-40 w-40 ... blur-3xl' and '-right-24 h-48 w-48 ... blur-3xl' extending beyond the right edge with no clipping ancestor, and (b) a 'lg:col-span-5' content column measured at 470px wide. The page-level container does not apply overflow-x-hidden, so these push the document width. Reproduction: open the URL at width=375, observe horizontal scrollbar and scrollWidth>clientWidth. Mitigation: add 'overflow-x-hidden' on <main>/<body> wrapper or each affected section, and ensure code blocks use 'overflow-x-auto' so long Swift lines scroll inside their own container instead of expanding the layout."
+}
