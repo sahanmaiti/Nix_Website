@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 
-const SETTINGS_IMG =
-  "https://customer-assets.emergentagent.com/job_precision-tool-6/artifacts/xuzagq1u_Settings.png";
-const MENUBAR_IMG =
-  "https://customer-assets.emergentagent.com/job_precision-tool-6/artifacts/kmzwilfq_Menubar_1.png";
+const SETTINGS_IMG = "/images/settings.png";
+const MENUBAR_IMG = "/images/menubar.png";
 
 export const HeroMockup = () => {
   return (

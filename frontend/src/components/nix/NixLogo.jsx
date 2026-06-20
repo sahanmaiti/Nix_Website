@@ -1,7 +1,7 @@
 export const NixLogo = ({ size = 28, className = "", showWordmark = true }) => (
   <div className={`flex items-center gap-2 ${className}`} data-testid="nix-logo">
     <img
-      src="https://customer-assets.emergentagent.com/job_precision-tool-6/artifacts/69f94dwa_1024x1024.png"
+      src="/images/logo.png"
       alt="Nix"
       width={size}
       height={size}
