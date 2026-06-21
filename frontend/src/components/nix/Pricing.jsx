@@ -8,7 +8,7 @@ export const Pricing = () => {
     "Smart whitelist",
     "Custom grace periods",
     "Native SwiftUI interface",
-    "Zero telemetry",
+    "No usage tracking",
   ];
 
   return (
@@ -42,7 +42,7 @@ export const Pricing = () => {
               </div>
               
               <p className="text-[15px] text-white/60 mb-8 leading-relaxed">
-                Try Nix free for 7 days. Unlock the full version anytime from within the app. No subscriptions. No accounts. No telemetry.
+                Try Nix free for 7 days. Unlock the full version anytime from within the app. No subscriptions. No accounts. No usage tracking. Activate on up to 3 Macs.
               </p>
 
               <ul className="flex flex-col gap-4 text-left w-full mb-10">

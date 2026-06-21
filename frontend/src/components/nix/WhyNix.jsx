@@ -10,8 +10,7 @@ const rows = [
   ["Prompt Mode", true, "Rare"],
   ["Accessibility-based detection", true, "Varies"],
   ["Launch at Login", true, "Varies"],
-  ["No Telemetry", true, "Varies"],
-  ["One-Time Purchase", true, "Varies"],
+  ["No Usage Tracking", true, "Varies"],
 ];
 
 const Cell = ({ value }) =>
@@ -63,9 +62,14 @@ export const WhyNix = () => {
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <p className="mt-10 text-center text-[15px] md:text-[17px] text-white/60 max-w-2xl mx-auto leading-relaxed">
-            Nix combines powerful automation, native macOS design, and flexible app-specific control in a single lightweight utility.
-          </p>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4">
+            <p className="text-center text-[15px] md:text-[17px] text-white/60 max-w-2xl mx-auto leading-relaxed">
+              Nix combines powerful automation, native macOS design, and flexible app-specific control in a single lightweight utility.
+            </p>
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-5 py-2.5 text-[14px] text-white/80 font-medium mt-4 shadow-[0_4px_20px_-5px_rgba(255,255,255,0.05)]">
+              <span className="text-white">One-Time Purchase</span> <span className="text-white/30">·</span> No subscriptions ever
+            </div>
+          </div>
         </FadeUp>
       </div>
     </section>

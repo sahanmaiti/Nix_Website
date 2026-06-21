@@ -22,7 +22,7 @@ export const Hero = () => {
           data-testid="hero-badge"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
-          For macOS 13 and later · v1.0 available
+          For macOS 14.6 and later · Public Beta available
         </motion.div>
 
         <motion.h1
@@ -88,7 +88,7 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-5 text-[12px] text-white/40"
         >
-          7-day free trial · Native SwiftUI · No telemetry · 2.4 MB
+          7-day free trial · Native SwiftUI · No usage tracking · 2.4 MB · $9.99
         </motion.div>
 
         {/* Mockup */}

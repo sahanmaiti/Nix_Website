@@ -10,6 +10,8 @@ export const Footer = () => {
         </div>
         <div className="text-[12px] text-white/40 flex items-center gap-6">
           <span>Built on a Mac, for Mac.</span>
+          <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="mailto:support@nixapp.com" className="hover:text-white transition-colors">Support</a>
           <span className="hidden md:inline">© {new Date().getFullYear()} Nix</span>
         </div>
       </div>

@@ -32,9 +32,7 @@ export const Problem = () => {
               Closing a window isn&apos;t the same as quitting an app.
             </h2>
             <p className="mt-6 text-[17px] leading-relaxed text-white/60 max-w-2xl">
-              You close Safari. You close Notes. You close Preview. They look gone — but they&apos;re
-              still there, holding memory, draining battery, cluttering your dock. macOS has always
-              worked this way. Nix fixes it.
+              For apps like Music or Messages, background running is intentional and useful. For everything else, it just drains memory and clutters your dock. Nix gives you the control to decide which apps actually quit.
             </p>
           </div>
         </FadeUp>

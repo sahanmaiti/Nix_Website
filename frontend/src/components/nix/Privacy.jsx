@@ -5,9 +5,9 @@ import { Lock } from "lucide-react";
 const items = [
   "No analytics",
   "No telemetry",
-  "No tracking",
-  "No network requests",
-  "No accounts",
+  "No usage tracking",
+  "One network call (license only)",
+  "No Nix-hosted accounts",
 ];
 
 export const Privacy = () => {
@@ -24,7 +24,7 @@ export const Privacy = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] leading-[1.02] text-white">
-            Your Mac stays
+            Your usage stays
             <br />
             <span className="text-white/45">entirely yours.</span>
           </h2>
@@ -32,8 +32,7 @@ export const Privacy = () => {
 
         <FadeUp delay={0.1}>
           <p className="mx-auto mt-8 max-w-2xl text-[16px] leading-relaxed text-white/60">
-            Nix doesn&apos;t have a server. It can&apos;t. There is no analytics SDK, no crash reporter, no
-            anonymous events, no IP logging — because there is no network code at all.
+            Nix has no analytics SDK, no crash reporter, and no tracking of any kind. The only network activity is a single license check against Lemon Squeezy when you activate — nothing else Nix does ever touches the network.
           </p>
         </FadeUp>
 

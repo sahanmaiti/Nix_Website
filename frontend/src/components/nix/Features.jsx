@@ -41,7 +41,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Privacy First",
-    body: "No analytics. No telemetry. No network. Nix never phones home.",
+    body: "No analytics. No usage tracking. One network call for license validation only.",
     span: "md:col-span-2",
   },
   {

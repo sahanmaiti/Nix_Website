@@ -21,11 +21,15 @@ const faqs = [
   },
   {
     q: "Does Nix collect any data?",
-    a: "No analytics, no telemetry, no crash reporting, no IP logging. Nix has no network code at all. It cannot send data because it doesn't know how to.",
+    a: "Nix has no analytics SDK, no crash reporter, and no tracking of any kind. The only network activity is a single license check against Lemon Squeezy when you activate. Nothing else Nix does ever touches the network.",
+  },
+  {
+    q: "What happens after the trial if I don't buy?",
+    a: "The background monitoring engine will pause, but all your per-app rules and settings are safely preserved on your Mac. They will instantly reactivate whenever you purchase a license.",
   },
   {
     q: "Which macOS versions are supported?",
-    a: "macOS 13 Ventura and later. Universal binary — runs natively on Apple Silicon and Intel.",
+    a: "macOS 14.6 and later. Universal binary — runs natively on Apple Silicon and Intel.",
   },
   {
     q: "Is Nix free?",
