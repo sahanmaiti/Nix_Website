@@ -7,7 +7,7 @@ import { WhyNix } from "@/components/nix/WhyNix";
 import { BuiltForMac } from "@/components/nix/BuiltForMac";
 import { Privacy } from "@/components/nix/Privacy";
 import { FAQ } from "@/components/nix/FAQ";
-import { Download } from "@/components/nix/Download";
+import { Pricing } from "@/components/nix/Pricing";
 import { Footer } from "@/components/nix/Footer";
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
         <Privacy />
         {/* <Testimonials /> - Hidden per user request */}
         <FAQ />
-        <Download />
+        <Pricing />
       </main>
       <Footer />
     </>
