@@ -16,7 +16,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark scroll-smooth bg-[#000000] overscroll-none">
-      <body className={`${inter.className} min-h-screen bg-[#000000] text-white antialiased selection:bg-white selection:text-black`}>
+      <body className={`${inter.className} min-h-screen bg-[#000000] text-white antialiased selection:bg-white selection:text-black overscroll-none`}>
         {/* Subtle Noise Texture - Removed mix-blend-screen to prevent additive blending artifacts during repaints */}
         <div 
           className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.03]"
