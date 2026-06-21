@@ -35,16 +35,18 @@ export const HeroMockup = () => {
           />
 
           {/* Menubar Popover */}
-          <motion.img
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-            src={MENUBAR_IMG}
-            alt="Nix Menubar"
-            className="absolute inset-0 w-full h-auto select-none drop-shadow-xl"
-            draggable={false}
-            loading="eager"
-            decoding="async"
-          />
+          <div className="absolute inset-0 w-full h-full translate-y-[46%] translate-x-[2%]">
+            <motion.img
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+              src={MENUBAR_IMG}
+              alt="Nix Menubar"
+              className="w-full h-auto select-none drop-shadow-xl"
+              draggable={false}
+              loading="eager"
+              decoding="async"
+            />
+          </div>
           
         </div>
       </div>
