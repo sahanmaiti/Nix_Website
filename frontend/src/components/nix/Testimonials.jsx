@@ -20,7 +20,7 @@ const quotes = [
   },
   {
     quote:
-      "Zero CPU. Zero network. Zero noise. It just sits in the menu bar and quietly does the right thing.",
+      "Zero CPU. No noise. It just sits in the menu bar and quietly does the right thing.",
     name: "Daniel Okafor",
     role: "Site Reliability Engineer",
     avatar:

@@ -4,7 +4,6 @@ import { Lock } from "lucide-react";
 
 const items = [
   "No analytics",
-  "No telemetry",
   "No usage tracking",
   "One network call (license only)",
   "No Nix-hosted accounts",
