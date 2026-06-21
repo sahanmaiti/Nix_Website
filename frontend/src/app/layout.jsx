@@ -9,6 +9,10 @@ export const metadata = {
   description: "Nix - Modern Mac App",
 };
 
+export const viewport = {
+  themeColor: "#000000",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark scroll-smooth bg-[#000000] overscroll-none">
