@@ -48,6 +48,15 @@ export const Hero = () => {
           and dozens more keep running in the background. Nix notices and cleanly quits them — the
           way you expected all along.
         </motion.p>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.20 }}
+          className="mx-auto mt-4 max-w-xl text-[14px] leading-relaxed text-white/45"
+        >
+          Perfect for developers, designers, students, and anyone who prefers apps to actually quit when they&apos;re closed.
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 18 }}
@@ -79,7 +88,7 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-5 text-[12px] text-white/40"
         >
-          Free · Native Swift · No telemetry · 2.4 MB
+          7-day free trial · Native SwiftUI · No telemetry · 2.4 MB
         </motion.div>
 
         {/* Mockup */}

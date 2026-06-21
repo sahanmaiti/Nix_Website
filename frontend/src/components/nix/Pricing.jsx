@@ -34,8 +34,11 @@ export const Pricing = () => {
             
             <div className="relative z-10 w-full flex flex-col items-center">
               <h3 className="text-2xl font-semibold text-white/90 mb-3">Lifetime License</h3>
-              <div className="flex items-baseline justify-center gap-1 mb-6">
+              <div className="flex items-baseline justify-center gap-1 mb-2">
                 <span className="text-5xl font-bold tracking-tight text-white">$9.99</span>
+              </div>
+              <div className="text-[13px] text-white/50 mb-6 font-medium">
+                One-time purchase
               </div>
               
               <p className="text-[15px] text-white/60 mb-8 leading-relaxed">

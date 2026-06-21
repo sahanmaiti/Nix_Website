@@ -7,6 +7,7 @@ const items = [
   "No telemetry",
   "No tracking",
   "No network requests",
+  "No accounts",
 ];
 
 export const Privacy = () => {
@@ -37,7 +38,7 @@ export const Privacy = () => {
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
+          <div className="mt-12 flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
             {items.map((it) => (
               <div
                 key={it}

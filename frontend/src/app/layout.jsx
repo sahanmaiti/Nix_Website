@@ -5,8 +5,8 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = {
-  title: "Nix",
-  description: "Nix - Modern Mac App",
+  title: "Nix — Quit Apps When You Close Their Last Window",
+  description: "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
 };
 
 export const viewport = {

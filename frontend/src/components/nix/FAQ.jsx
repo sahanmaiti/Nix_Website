@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Is Nix free?",
-    a: "Yes. Nix is a free, native utility. No subscription, no account, no cloud — just a small Mac app.",
+    a: "Nix includes a 7-day free trial. After that, unlock the full version with a one-time $9.99 purchase. No subscriptions. No accounts. No cloud services.",
   },
   {
     q: "Does Nix need Accessibility permissions?",
