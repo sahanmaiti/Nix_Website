@@ -5,7 +5,7 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = {
-  title: "Nix | Fullstack App",
+  title: "Nix",
   description: "Nix - Modern Mac App",
 };
 
