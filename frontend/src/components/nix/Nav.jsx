@@ -16,13 +16,13 @@ export const Nav = () => {
   return (
     <header
       data-testid="nav-header"
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 inset-x-0 z-50 transition-[padding] duration-500 ${
         scrolled ? "py-3" : "py-5"
       }`}
     >
       <div className="mx-auto max-w-6xl px-5">
         <div
-          className={`flex items-center justify-between rounded-full border border-white/[0.08] px-4 py-2.5 backdrop-blur-xl transition-all duration-500 ${
+          className={`flex items-center justify-between rounded-full border border-white/[0.08] px-4 py-2.5 backdrop-blur-xl transition-colors duration-500 will-change-transform ${
             scrolled ? "bg-black/60" : "bg-white/[0.02]"
           }`}
         >
