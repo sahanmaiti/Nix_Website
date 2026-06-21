@@ -1,3 +1,4 @@
+"use client";
 import { FadeUp } from "./FadeUp";
 import { Lock } from "lucide-react";
 

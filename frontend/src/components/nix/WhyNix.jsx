@@ -1,3 +1,4 @@
+"use client";
 import { FadeUp } from "./FadeUp";
 import { Check, Minus } from "lucide-react";
 
@@ -51,7 +52,7 @@ export const WhyNix = () => {
             {rows.map(([label, a, b, c], i) => (
               <div
                 key={i}
-                className={`grid grid-cols-12 px-6 py-4 items-center ${
+                className={`grid grid-cols-12 px-6 py-4 items-center transition-colors hover:bg-white/[0.02] ${
                   i % 2 === 0 ? "bg-white/[0.005]" : ""
                 } ${i !== rows.length - 1 ? "border-b border-white/[0.04]" : ""}`}
               >

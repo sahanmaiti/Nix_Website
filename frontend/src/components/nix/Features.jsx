@@ -1,3 +1,4 @@
+"use client";
 import { FadeUp, Stagger, StaggerItem } from "./FadeUp";
 import {
   Power,
@@ -74,7 +75,7 @@ export const Features = () => {
           {features.map((f, i) => (
             <StaggerItem key={i} className={f.span || ""}>
               <div
-                className="group relative h-full min-h-[180px] rounded-2xl border border-white/[0.07] bg-gradient-to-b from-white/[0.025] to-white/[0.005] p-6 hover:border-white/[0.15] hover:bg-white/[0.04] transition-all duration-500 overflow-hidden"
+                className="group relative h-full min-h-[180px] rounded-2xl border border-white/[0.07] bg-gradient-to-b from-white/[0.025] to-white/[0.005] p-6 hover:border-white/[0.15] hover:bg-white/[0.04] hover:-translate-y-1 hover:shadow-2xl hover:shadow-white/[0.02] transition-all duration-500 overflow-hidden"
                 data-testid={`feature-card-${i}`}
               >
                 <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-white/[0.02] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />

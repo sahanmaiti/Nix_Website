@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { NixLogo } from "./NixLogo";
 import { ArrowDownToLine } from "lucide-react";

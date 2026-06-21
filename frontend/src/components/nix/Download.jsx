@@ -1,3 +1,4 @@
+"use client";
 import { FadeUp } from "./FadeUp";
 import { ArrowDownToLine } from "lucide-react";
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FadeUp, Stagger, StaggerItem } from "./FadeUp";
 
 const quotes = [
@@ -51,9 +52,11 @@ export const Testimonials = () => {
                   &ldquo;{q.quote}&rdquo;
                 </blockquote>
                 <figcaption className="mt-6 flex items-center gap-3 pt-5 border-t border-white/[0.05]">
-                  <img
+                  <Image
                     src={q.avatar}
                     alt=""
+                    width={36}
+                    height={36}
                     className="h-9 w-9 rounded-full object-cover grayscale border border-white/[0.08]"
                   />
                   <div>

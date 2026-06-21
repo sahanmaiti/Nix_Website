@@ -1,3 +1,4 @@
+"use client";
 import { FadeUp } from "./FadeUp";
 import { X, Check } from "lucide-react";
 
@@ -40,7 +41,7 @@ export const Problem = () => {
 
         <div className="mt-16 grid md:grid-cols-2 gap-5">
           <FadeUp delay={0.05}>
-            <div className="rounded-2xl border border-white/[0.07] bg-white/[0.015] p-7 h-full" data-testid="problem-before-card">
+            <div className="group rounded-2xl border border-white/[0.07] bg-white/[0.015] p-7 h-full transition-all duration-300 hover:border-white/[0.14] hover:-translate-y-1 hover:shadow-2xl hover:shadow-white/[0.02]" data-testid="problem-before-card">
               <div className="flex items-center gap-2 mb-6">
                 <div className="h-7 w-7 rounded-full bg-white/[0.05] border border-white/[0.06] flex items-center justify-center">
                   <X className="h-3.5 w-3.5 text-white/60" />
@@ -65,7 +66,7 @@ export const Problem = () => {
           </FadeUp>
 
           <FadeUp delay={0.15}>
-            <div className="rounded-2xl border border-white/[0.1] bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-7 h-full" data-testid="problem-after-card">
+            <div className="group rounded-2xl border border-white/[0.1] bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-7 h-full transition-all duration-300 hover:border-white/[0.18] hover:-translate-y-1 hover:shadow-2xl hover:shadow-white/[0.03]" data-testid="problem-after-card">
               <div className="flex items-center gap-2 mb-6">
                 <div className="h-7 w-7 rounded-full bg-white/[0.08] border border-white/[0.1] flex items-center justify-center">
                   <Check className="h-3.5 w-3.5 text-white" />

@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 export const FadeUp = ({ children, delay = 0, y = 24, className = "", once = true }) => {

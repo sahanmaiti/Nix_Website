@@ -1,3 +1,4 @@
+"use client";
 import { FadeUp, Stagger, StaggerItem } from "./FadeUp";
 import { Radar, GitBranch, Power } from "lucide-react";
 
