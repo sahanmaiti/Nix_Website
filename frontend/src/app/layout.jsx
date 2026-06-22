@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
@@ -85,6 +86,7 @@ export default function RootLayout({ children }) {
         <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-[#000000]">
           <Providers>{children}</Providers>
         </div>
+        <Analytics />
       </body>
     </html>
   );
