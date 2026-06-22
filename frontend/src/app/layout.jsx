@@ -7,8 +7,13 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] }
 export const metadata = {
   metadataBase: new URL("https://nix-mu.vercel.app"),
   title: "Nix — Quit Apps When You Close Their Last Window",
+  applicationName: "Nix",
   description:
     "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
   keywords: [
     "Nix",
     "Nix for Mac",
