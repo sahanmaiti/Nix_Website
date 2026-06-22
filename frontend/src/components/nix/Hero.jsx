@@ -20,6 +20,7 @@ export const Hero = () => {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] backdrop-blur-md px-3 py-1 text-[11px] text-white/70 mb-7"
           data-testid="hero-badge"
+          style={{ willChange: "transform, opacity" }}
         >
           <span className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
           For macOS 14.6 and later · Public Beta available
@@ -31,6 +32,7 @@ export const Hero = () => {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
           className="text-5xl md:text-7xl lg:text-[88px] font-semibold tracking-[-0.04em] leading-[0.98] text-white"
           data-testid="hero-headline"
+          style={{ willChange: "transform, opacity" }}
         >
           Close the window.
           <br />
@@ -43,6 +45,7 @@ export const Hero = () => {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
           className="mx-auto mt-7 max-w-2xl text-[15px] md:text-[17px] leading-relaxed text-white/65"
           data-testid="hero-subheadline"
+          style={{ willChange: "transform, opacity" }}
         >
           On macOS, closing the last window doesn&apos;t actually quit the app. Safari, Notes, Preview,
           and dozens more keep running in the background. Nix notices and cleanly quits them — the
@@ -54,6 +57,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.20 }}
           className="mx-auto mt-4 max-w-xl text-[14px] leading-relaxed text-white/45"
+          style={{ willChange: "transform, opacity" }}
         >
           Perfect for developers, designers, students, and anyone who prefers apps to actually quit when they&apos;re closed.
         </motion.p>
@@ -63,6 +67,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
           className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3"
+          style={{ willChange: "transform, opacity" }}
         >
           <a
             href="#download"
@@ -87,6 +92,7 @@ export const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-5 text-[12px] text-white/40"
+          style={{ willChange: "opacity" }}
         >
           7-day free trial · Native SwiftUI · No usage tracking · 2.4 MB · $9.99
         </motion.div>
@@ -97,6 +103,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.35 }}
           className="mt-20 md:mt-24"
+          style={{ willChange: "transform, opacity" }}
         >
           <HeroMockup />
         </motion.div>

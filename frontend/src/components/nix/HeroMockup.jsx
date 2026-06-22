@@ -13,8 +13,8 @@ export const HeroMockup = () => {
       {/* Ambient glow */}
       <div className="pointer-events-none absolute -inset-x-32 -top-16 -bottom-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
-        <div className="absolute left-1/4 top-1/3 h-72 w-72 rounded-full bg-[#7c2bff]/10 blur-[120px]" />
-        <div className="absolute right-1/4 top-1/2 h-80 w-80 rounded-full bg-white/[0.04] blur-[120px]" />
+        <div className="absolute left-1/4 top-1/3 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(124,43,255,0.1),transparent_70%)]" />
+        <div className="absolute right-1/4 top-1/2 h-[600px] w-[600px] translate-x-1/4 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.04),transparent_70%)]" />
       </div>
 
       <div className="relative mx-auto w-full overflow-hidden [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]">
@@ -29,6 +29,7 @@ export const HeroMockup = () => {
             width={3600}
             height={2338}
             className="block w-full h-auto select-none drop-shadow-2xl"
+            style={{ willChange: "transform" }}
             draggable={false}
             priority
           />
@@ -43,6 +44,7 @@ export const HeroMockup = () => {
               width={3600}
               height={2338}
               className="w-full h-auto select-none drop-shadow-xl"
+              style={{ willChange: "transform" }}
               draggable={false}
               priority
             />
