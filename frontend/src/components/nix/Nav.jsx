@@ -40,6 +40,9 @@ export const Nav = () => {
             <a href="#why" className="hover:text-white transition-colors" data-testid="nav-link-why">
               Why Nix
             </a>
+            <a href="#download" className="hover:text-white transition-colors" data-testid="nav-link-pricing">
+              Pricing
+            </a>
             <a href="#faq" className="hover:text-white transition-colors" data-testid="nav-link-faq">
               FAQ
             </a>

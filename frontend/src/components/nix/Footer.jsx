@@ -8,7 +8,6 @@ export const Footer = () => {
           <div className="flex flex-col gap-6 max-w-sm">
             <div className="flex items-center gap-2">
               <NixLogo />
-              <span className="text-white font-medium tracking-tight text-[17px]">Nix</span>
             </div>
             <p className="text-[14px] leading-relaxed text-white/50">
               Window management the way Apple should have built it. Crafted with native Swift for peak performance on Apple Silicon.
@@ -26,8 +25,8 @@ export const Footer = () => {
 
             <div className="flex flex-col gap-4">
               <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/30 mb-2">Connect</span>
-              <a href="#" className="text-[13px] text-white/60 hover:text-white transition-colors">GitHub</a>
-              <a href="#" className="text-[13px] text-white/60 hover:text-white transition-colors">X (Twitter)</a>
+              <a href="https://github.com/sahanmaiti" target="_blank" rel="noopener noreferrer" className="text-[13px] text-white/60 hover:text-white transition-colors">GitHub</a>
+              <a href="https://x.com/sahan_maiti" target="_blank" rel="noopener noreferrer" className="text-[13px] text-white/60 hover:text-white transition-colors">X (Twitter)</a>
             </div>
           </div>
         </div>
