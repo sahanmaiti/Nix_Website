@@ -52,9 +52,21 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Nix",
+    alternateName: "Nix",
+    url: "https://nix-mu.vercel.app",
+  };
+
   return (
     <html lang="en" className="dark scroll-smooth bg-[#000000] overscroll-none">
       <body className={`${inter.className} min-h-screen bg-[#000000] text-white antialiased selection:bg-white selection:text-black`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* Subtle Noise Texture - Removed mix-blend-screen to prevent additive blending artifacts during repaints */}
         <div 
           className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.007]"
