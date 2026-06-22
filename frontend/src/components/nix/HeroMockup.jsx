@@ -40,8 +40,8 @@ export const HeroMockup = () => {
               transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
               src={MENUBAR_IMG}
               alt="Nix Menubar"
-              width={3600}
-              height={2338}
+              width={1173}
+              height={1341}
               className="w-full h-auto select-none drop-shadow-xl"
               draggable={false}
               priority
