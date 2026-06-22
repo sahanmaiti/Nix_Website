@@ -1,4 +1,4 @@
-// File: /Users/sahan/Personal/Projects/NixApp/Nix_Website/frontend/src/app/layout.jsx
+// File: /vercel/sandbox/primary/frontend/src/app/layout.jsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

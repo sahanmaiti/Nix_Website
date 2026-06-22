@@ -108,7 +108,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/sahan/Personal/Projects/NixApp/Nix_Website/frontend",
+    "outputFileTracingRoot": "/vercel/sandbox/primary/frontend",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -167,7 +167,7 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 11,
+      "cpus": 1,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -298,10 +298,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/Users/sahan/Personal/Projects/NixApp/Nix_Website/frontend"
+      "root": "/vercel/sandbox/primary/frontend"
     }
   },
-  "appDir": "/Users/sahan/Personal/Projects/NixApp/Nix_Website/frontend",
+  "appDir": "/vercel/sandbox/primary/frontend",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
