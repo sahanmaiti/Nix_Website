@@ -38,12 +38,21 @@ export const metadata = {
     url: "https://nix-mu.vercel.app",
     siteName: "Nix",
     type: "website",
+    images: [
+      {
+        url: "https://nix-mu.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Nix Promotional Image",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Nix",
     description:
       "Automatically quit Mac apps when their last window closes.",
+    images: ["https://nix-mu.vercel.app/og-image.png"],
   },
 };
 
