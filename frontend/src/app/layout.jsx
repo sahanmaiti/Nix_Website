@@ -5,8 +5,41 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = {
+  metadataBase: new URL("https://nix-mu.vercel.app"),
   title: "Nix — Quit Apps When You Close Their Last Window",
-  description: "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
+  description:
+    "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
+  keywords: [
+    "Nix",
+    "Nix for Mac",
+    "macOS utility",
+    "auto quit apps",
+    "close window quit app",
+    "Mac productivity",
+    "SwiftUI",
+    "menu bar utility",
+  ],
+  verification: {
+    google: "r_fAZZ2g-8x8o5oZogq7bAE7mynn3bWLETweZM6vPIQ",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Nix — Quit Apps When You Close Their Last Window",
+    description:
+      "Automatically quit Mac apps when their last window closes.",
+    url: "https://nix-mu.vercel.app",
+    siteName: "Nix",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nix",
+    description:
+      "Automatically quit Mac apps when their last window closes.",
+  },
 };
 
 export const viewport = {
