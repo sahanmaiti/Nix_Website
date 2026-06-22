@@ -9,7 +9,6 @@ export const FadeUp = ({ children, delay = 0, y = 24, className = "", once = tru
       viewport={{ once, margin: "-80px" }}
       transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
-      style={{ willChange: "transform, opacity" }}
     >
       {children}
     </motion.div>
@@ -38,7 +37,6 @@ export const StaggerItem = ({ children, className = "", y = 20 }) => (
       show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
     }}
     className={className}
-    style={{ willChange: "transform, opacity" }}
   >
     {children}
   </motion.div>
