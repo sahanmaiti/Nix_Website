@@ -1,4 +1,4 @@
-// File: /Users/sahan/Personal/Projects/NixApp/Nix_Website/frontend/src/app/privacy/page.jsx
+// File: /vercel/sandbox/primary/frontend/src/app/privacy/page.jsx
 import * as entry from '../../../../src/app/privacy/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
