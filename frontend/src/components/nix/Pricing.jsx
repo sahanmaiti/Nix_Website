@@ -57,7 +57,7 @@ export const Pricing = () => {
               </ul>
 
               <a
-                href="#download-app"
+                href="https://github.com/sahanmaiti/Nix/releases/latest/download/Nix.dmg"
                 data-testid="download-primary-btn"
                 className="inline-flex w-full justify-center items-center gap-2 rounded-full bg-white text-black px-6 py-3.5 text-[15px] font-medium hover:bg-white/90 active:scale-[0.98] transition-all shadow-[0_20px_60px_-15px_rgba(255,255,255,0.5)]"
               >

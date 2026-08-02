@@ -49,7 +49,7 @@ export const Nav = () => {
           </nav>
 
           <a
-            href="#download"
+            href="https://github.com/sahanmaiti/Nix/releases/latest/download/Nix.dmg"
             data-testid="nav-download-btn"
             className="inline-flex items-center gap-1.5 rounded-full bg-white text-black px-3.5 py-1.5 text-[13px] font-medium hover:bg-white/90 active:bg-white/80 transition-colors"
           >

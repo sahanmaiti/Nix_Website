@@ -65,7 +65,7 @@ export const Hero = () => {
           className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3"
         >
           <a
-            href="#download"
+            href="https://github.com/sahanmaiti/Nix/releases/latest/download/Nix.dmg"
             data-testid="hero-download-btn"
             className="group inline-flex items-center gap-2 rounded-full bg-white text-black px-5 py-3 text-[14px] font-medium hover:bg-white/90 active:scale-[0.98] transition-all shadow-[0_10px_40px_-10px_rgba(255,255,255,0.5)]"
           >
