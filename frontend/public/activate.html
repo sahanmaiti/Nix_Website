@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Activating Nix…</title>
+<meta name="robots" content="noindex">
+</head>
+<body style="font-family: -apple-system, sans-serif; text-align:center; padding-top: 80px;">
+<p id="msg">Activating Nix…</p>
+<p><a id="fallback" href="#" style="display:none;">Click here if nothing happens</a></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get("key");
+
+    if (key) {
+    const deepLink = "nix://activate?key=" + encodeURIComponent(key);
+    document.getElementById("fallback").href = deepLink;
+    document.getElementById("fallback").style.display = "inline";
+    window.location.href = deepLink;
+    } else {
+    document.getElementById("msg").textContent = "Missing license key.";
+    }
+</script>
+</body>
+</html>
