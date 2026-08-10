@@ -42,7 +42,7 @@ export const Footer = () => {
           
           <div className="flex items-center gap-2 text-[12px] text-white/40">
             <span className="h-1.5 w-1.5 rounded-full bg-white/20 shadow-[0_0_10px_rgba(255,255,255,0.1)]" />
-            Designed for macOS in California.
+            Designed for macOS in India.
           </div>
         </div>
       </div>
