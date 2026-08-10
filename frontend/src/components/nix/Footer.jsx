@@ -10,7 +10,7 @@ export const Footer = () => {
               <NixLogo />
             </div>
             <p className="text-[14px] leading-relaxed text-white/50">
-              Window management the way Apple should have built it. Crafted with native Swift for peak performance on Apple Silicon.
+              Window management the way Apple should have built it. Native Swift, Apple Silicon optimized.
             </p>
           </div>
 

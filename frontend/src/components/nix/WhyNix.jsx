@@ -30,7 +30,7 @@ export const WhyNix = () => {
           <div className="text-center max-w-3xl mx-auto">
             <div className="text-[12px] uppercase tracking-[0.18em] text-white/40 mb-5">Why Nix</div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.035em] leading-[1.05] text-white">
-              The most flexible quit-on-close experience for macOS.
+              More control than any other quit-on-close tool.
             </h2>
           </div>
         </FadeUp>
@@ -64,7 +64,7 @@ export const WhyNix = () => {
         <FadeUp delay={0.2}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4">
             <p className="text-center text-[15px] md:text-[17px] text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Nix combines powerful automation, native macOS design, and flexible app-specific control in a single lightweight utility.
+              Per-app rules, native performance, and a tiny footprint. One menu bar icon, no complexity.
             </p>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-5 py-2.5 text-[14px] text-white/80 font-medium mt-4 shadow-[0_4px_20px_-5px_rgba(255,255,255,0.05)]">
               <span className="text-white">One-Time Purchase</span> <span className="text-white/30">·</span> No subscriptions ever

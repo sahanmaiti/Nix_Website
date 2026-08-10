@@ -72,7 +72,7 @@ export const Problem = () => {
                 <span className="text-[12px] uppercase tracking-[0.16em] text-white/70">With Nix</span>
               </div>
               <div className="text-[15px] text-white/85 mb-6 leading-relaxed">
-                You closed the windows. The apps are gone. Your Mac feels lighter.
+                You closed the windows. The apps are actually gone.
               </div>
               <div className="rounded-xl border border-white/[0.06] bg-black/40 p-4">
                 <div className="flex items-end justify-center gap-3 flex-wrap">

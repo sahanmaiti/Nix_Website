@@ -22,7 +22,7 @@ export const Hero = () => {
           data-testid="hero-badge"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
-          For macOS 14.6 and later · Public Beta available
+          For macOS 14.6 and later
         </motion.div>
 
         <motion.h1
@@ -45,8 +45,7 @@ export const Hero = () => {
           data-testid="hero-subheadline"
         >
           On macOS, closing the last window doesn&apos;t actually quit the app. Safari, Notes, Preview,
-          and dozens more keep running in the background. Nix notices and cleanly quits them — the
-          way you expected all along.
+          and dozens more keep running in the background. Nix notices, and cleanly quits them for you.
         </motion.p>
         
         <motion.p
@@ -55,7 +54,7 @@ export const Hero = () => {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.20 }}
           className="mx-auto mt-4 max-w-xl text-[14px] leading-relaxed text-white/45"
         >
-          Perfect for developers, designers, students, and anyone who prefers apps to actually quit when they&apos;re closed.
+          If you close a window, the app should quit. Period.
         </motion.p>
 
         <motion.div
@@ -70,7 +69,7 @@ export const Hero = () => {
             className="group inline-flex items-center gap-2 rounded-full bg-white text-black px-5 py-3 text-[14px] font-medium hover:bg-white/90 active:scale-[0.98] transition-all shadow-[0_10px_40px_-10px_rgba(255,255,255,0.5)]"
           >
             <ArrowDownToLine className="h-4 w-4" />
-            Download for macOS
+            Download Nix
           </a>
           <a
             href="#how"
@@ -88,7 +87,7 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-5 text-[12px] text-white/40"
         >
-          7-day free trial · Native SwiftUI · No usage tracking · 2.4 MB · $9.99
+          7-day free trial · One-time $9.99 · No tracking · macOS 14.6+
         </motion.div>
 
         {/* Mockup */}

@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Does Nix force-kill apps?",
-    a: "Never. Nix sends a standard termination request — the same signal as pressing ⌘Q. The app handles its own shutdown, saves any unsaved work, and exits cleanly.",
+    a: "Never. Nix sends a standard termination request, the same signal as ⌘Q. The app handles its own shutdown, saves unsaved work, and exits cleanly.",
   },
   {
     q: "Will it interfere with apps I want to keep running?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Does Nix collect any data?",
-    a: "Nix has no analytics SDK, no crash reporter, and no tracking of any kind. The only network activity is a single license check against Lemon Squeezy when you activate. Nothing else Nix does ever touches the network.",
+    a: "None. Zero analytics, zero crash reporters, zero tracking. The only network call is license activation via Lemon Squeezy.",
   },
   {
     q: "What happens after the trial if I don't buy?",
@@ -39,11 +39,40 @@ const faqs = [
     q: "Does Nix need Accessibility permissions?",
     a: "Yes. macOS requires Accessibility access for Nix to observe window-close events. Permission is granted once in System Settings — Nix never uses it for anything else.",
   },
+  {
+    q: "How does Nix update?",
+    a: "Nix updates itself automatically via Sparkle. You'll see a prompt when a new version is available.",
+  },
+  {
+    q: "Is Nix on the Mac App Store?",
+    a: "No. Nix is distributed as a signed and notarized DMG directly from our website. This lets us ship updates faster and use the Accessibility API without App Store restrictions.",
+  },
+  {
+    q: "What's the refund policy?",
+    a: "Not satisfied? Email support@nixapp.com within 14 days of purchase for a full refund, no questions asked.",
+  },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.a,
+    },
+  })),
+};
 
 export const FAQ = () => {
   return (
     <section id="faq" className="relative py-28 md:py-36 border-t border-white/[0.06]" data-testid="faq-section">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="mx-auto max-w-3xl px-5">
         <FadeUp>
           <div className="text-center">

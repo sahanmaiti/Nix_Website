@@ -21,9 +21,9 @@ export const Pricing = () => {
         <FadeUp>
           <div className="text-[12px] uppercase tracking-[0.18em] text-white/40 mb-5">Pricing</div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.035em] leading-[1.05] text-white">
-            A simple tool.
+            $9.99, once.
             <br />
-            <span className="text-white/45">A simple price.</span>
+            <span className="text-white/45">No subscriptions.</span>
           </h2>
         </FadeUp>
 
@@ -42,7 +42,7 @@ export const Pricing = () => {
               </div>
               
               <p className="text-[15px] text-white/60 mb-8 leading-relaxed">
-                Try Nix free for 7 days. Unlock the full version anytime from within the app. No subscriptions. No accounts. No usage tracking. Activate on up to 3 Macs.
+                Try Nix free for 7 days. Buy the full version directly inside the app. No subscriptions. No accounts. No tracking. Activate on up to 3 Macs.
               </p>
 
               <ul className="flex flex-col gap-4 text-left w-full mb-10">

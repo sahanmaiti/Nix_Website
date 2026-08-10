@@ -8,7 +8,7 @@ const steps = [
     icon: Radar,
     title: "Detect",
     body:
-      "Nix observes window lifecycle events through the macOS Accessibility API. The moment an app's last window closes, Nix knows.",
+      "Nix watches window events via the macOS Accessibility API. When the last window closes, it fires.",
     detail: "AXObserver · Event-driven · Zero polling",
   },
   {

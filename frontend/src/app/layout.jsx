@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
-import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
@@ -20,11 +19,23 @@ export const metadata = {
     "Nix for Mac",
     "macOS utility",
     "auto quit apps",
+    "auto quit apps mac",
     "close window quit app",
+    "close window quit app mac",
+    "quit on close mac",
     "Mac productivity",
     "SwiftUI",
     "menu bar utility",
+    "menu bar app mac",
+    "macOS window manager",
+    "quit apps automatically macOS",
+    "mac app management",
+    "macOS Sonoma utility",
+    "lightweight mac utility",
   ],
+  alternates: {
+    canonical: "https://nix-mu.vercel.app",
+  },
   verification: {
     google: "r_fAZZ2g-8x8o5oZogq7bAE7mynn3bWLETweZM6vPIQ",
   },
@@ -64,10 +75,26 @@ export const viewport = {
 export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": "SoftwareApplication",
     name: "Nix",
-    alternateName: "Nix",
+    operatingSystem: "macOS 14.6 Sonoma or later",
+    applicationCategory: "UtilitiesApplication",
+    offers: {
+      "@type": "Offer",
+      price: "9.99",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+    },
+    description: "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
     url: "https://nix-mu.vercel.app",
+    downloadUrl: "https://github.com/sahanmaiti/Nix/releases/latest/download/Nix.dmg",
+    softwareVersion: "1.0",
+    fileSize: "2.4MB",
+    author: {
+      "@type": "Person",
+      name: "Sahan Maiti",
+      url: "https://github.com/sahanmaiti",
+    },
   };
 
   return (
@@ -86,7 +113,6 @@ export default function RootLayout({ children }) {
         <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-[#000000]">
           <Providers>{children}</Providers>
         </div>
-        <Analytics />
       </body>
     </html>
   );

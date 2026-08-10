@@ -15,6 +15,7 @@ export default function PrivacyPolicy() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white mb-8">
             Privacy Policy
           </h1>
+          <p className="text-[13px] text-white/40 mb-8">Last updated: August 2026</p>
           
           <div className="space-y-8 text-[15px] md:text-[16px] leading-relaxed text-white/70">
             <p>
@@ -25,6 +26,9 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl font-medium text-white mb-3">What Nix Collects Locally</h2>
               <p>
                 Nix stores all of its operational data — including your app rules, grace period settings, and whitelist preferences — strictly on your local machine using standard macOS <code>UserDefaults</code>. None of this data is ever transmitted off your device. There is no analytics SDK, no crash reporter, and no usage tracking.
+              </p>
+              <p className="mt-3">
+                Nix uses the Accessibility API solely to observe window lifecycle events (open/close). It never reads window content, text fields, or screen data.
               </p>
             </section>
 
@@ -50,6 +54,20 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl font-medium text-white mb-3">No Third Parties</h2>
               <p>
                 Aside from the Lemon Squeezy license check, no other third party is involved. Nix never phones home, never profiles your app usage, and has absolutely no other network code built into the app.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-medium text-white mb-3">This Website</h2>
+              <p>
+                This marketing website is a static site hosted on Vercel. It does not use cookies, does not collect personal data, and does not run third-party analytics. The Nix application and this website are entirely separate codebases.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-medium text-white mb-3">Refunds</h2>
+              <p>
+                Not satisfied with Nix? Email <a href="mailto:support@nixapp.com" className="text-white hover:underline transition-all">support@nixapp.com</a> within 14 days of purchase for a full refund, no questions asked.
               </p>
             </section>
 

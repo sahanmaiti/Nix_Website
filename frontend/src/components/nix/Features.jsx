@@ -64,9 +64,9 @@ export const Features = () => {
           <div className="max-w-3xl">
             <div className="text-[12px] uppercase tracking-[0.18em] text-white/40 mb-5">Features</div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.035em] leading-[1.05] text-white">
-              Small app.
+              Total control from
               <br />
-              <span className="text-white/45">Big control.</span>
+              <span className="text-white/45">the menu bar.</span>
             </h2>
           </div>
         </FadeUp>

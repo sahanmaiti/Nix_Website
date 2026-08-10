@@ -23,15 +23,15 @@ export const Privacy = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] leading-[1.02] text-white">
-            Your usage stays
+            Zero telemetry.
             <br />
-            <span className="text-white/45">entirely yours.</span>
+            <span className="text-white/45">Zero tracking.</span>
           </h2>
         </FadeUp>
 
         <FadeUp delay={0.1}>
           <p className="mx-auto mt-8 max-w-2xl text-[16px] leading-relaxed text-white/60">
-            Nix has no analytics SDK, no crash reporter, and no tracking of any kind. The only network activity is a single license check against Lemon Squeezy when you activate — nothing else Nix does ever touches the network.
+            No analytics SDK. No crash reporter. No tracking of any kind. The only network call is a single license check at activation; after that, Nix never touches the network.
           </p>
         </FadeUp>
 

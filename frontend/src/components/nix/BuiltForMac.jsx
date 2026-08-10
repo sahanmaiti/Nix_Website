@@ -16,8 +16,8 @@ export const BuiltForMac = () => {
                 Native, all the way down.
               </h2>
               <p className="mt-6 text-[16px] leading-relaxed text-white/60">
-                No Electron. No web layer. No background polling. Just Swift, the Accessibility API,
-                and event-driven observers — exactly how a Mac utility should be built.
+                No Electron. No web views. No background polling. Pure Swift and the Accessibility API,
+                driven by event observers. Built the way Mac utilities should be.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
