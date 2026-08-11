@@ -5,8 +5,11 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = {
-  metadataBase: new URL("https://nix-mu.vercel.app"),
-  title: "Nix | Quit Apps When You Close Their Last Window",
+  metadataBase: new URL("https://nix-mu.vercel.app/"),
+  title: {
+    default: "Nix | Quit Apps When You Close Their Last Window",
+    template: "%s | Nix"
+  },
   applicationName: "Nix",
   description:
     "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
@@ -34,7 +37,7 @@ export const metadata = {
     "lightweight mac utility",
   ],
   alternates: {
-    canonical: "https://nix-mu.vercel.app",
+    canonical: "https://nix-mu.vercel.app/",
   },
   verification: {
     google: "r_fAZZ2g-8x8o5oZogq7bAE7mynn3bWLETweZM6vPIQ",
@@ -46,8 +49,8 @@ export const metadata = {
   openGraph: {
     title: "Nix | Quit Apps When You Close Their Last Window",
     description:
-      "Automatically quit Mac apps when their last window closes.",
-    url: "https://nix-mu.vercel.app",
+      "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
+    url: "https://nix-mu.vercel.app/",
     siteName: "Nix",
     type: "website",
     images: [
@@ -63,7 +66,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Nix | Quit Apps When You Close Their Last Window",
     description:
-      "Automatically quit Mac apps when their last window closes.",
+      "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
     images: ["https://nix-mu.vercel.app/og-image.png"],
   },
 };
@@ -101,7 +104,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Nix",
-    alternateName: ["Nix for macOS"],
+    alternateName: ["Nix for Mac", "Nix macOS"],
     url: "https://nix-mu.vercel.app/"
   };
 
