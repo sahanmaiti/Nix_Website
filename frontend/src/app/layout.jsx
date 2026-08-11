@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] }
 
 export const metadata = {
   metadataBase: new URL("https://nix-mu.vercel.app"),
-  title: "Nix — Quit Apps When You Close Their Last Window",
+  title: "Nix | Quit Apps When You Close Their Last Window",
   applicationName: "Nix",
   description:
     "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
@@ -44,7 +44,7 @@ export const metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Nix — Quit Apps When You Close Their Last Window",
+    title: "Nix | Quit Apps When You Close Their Last Window",
     description:
       "Automatically quit Mac apps when their last window closes.",
     url: "https://nix-mu.vercel.app",
@@ -61,7 +61,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nix",
+    title: "Nix | Quit Apps When You Close Their Last Window",
     description:
       "Automatically quit Mac apps when their last window closes.",
     images: ["https://nix-mu.vercel.app/og-image.png"],
@@ -73,7 +73,7 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  const jsonLd = {
+  const jsonLdSoftware = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Nix",
@@ -97,12 +97,24 @@ export default function RootLayout({ children }) {
     },
   };
 
+  const jsonLdWebSite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Nix",
+    alternateName: ["Nix for macOS"],
+    url: "https://nix-mu.vercel.app/"
+  };
+
   return (
     <html lang="en" className="dark scroll-smooth bg-[#000000] overscroll-none">
       <body className={`${inter.className} min-h-screen bg-[#000000] text-white antialiased selection:bg-white selection:text-black`}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
         />
         {/* Subtle Noise Texture - Removed mix-blend-screen to prevent additive blending artifacts during repaints */}
         <div 

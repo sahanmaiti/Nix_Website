@@ -60,16 +60,7 @@
       "dangerouslyAllowSVG": false,
       "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
       "contentDispositionType": "attachment",
-      "remotePatterns": [
-        {
-          "protocol": "https",
-          "hostname": "images.unsplash.com"
-        },
-        {
-          "protocol": "https",
-          "hostname": "images.pexels.com"
-        }
-      ],
+      "remotePatterns": [],
       "unoptimized": false
     },
     "devIndicators": {
