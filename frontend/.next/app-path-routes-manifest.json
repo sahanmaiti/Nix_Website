@@ -1,7 +1,7 @@
 {
-  "/manifest.webmanifest/route": "/manifest.webmanifest",
-  "/icon.png/route": "/icon.png",
   "/apple-icon.png/route": "/apple-icon.png",
+  "/icon.png/route": "/icon.png",
+  "/manifest.webmanifest/route": "/manifest.webmanifest",
   "/robots.txt/route": "/robots.txt",
   "/sitemap.xml/route": "/sitemap.xml",
   "/_not-found/page": "/_not-found",
