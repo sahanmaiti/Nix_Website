@@ -10,7 +10,16 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
 }
+
+/* Scope smooth scrolling to anchor-link navigation only.
+   Globally applying scroll-behavior: smooth on <html> fights macOS trackpad
+   momentum inertia and causes jank/jumps during fast scrolling. */
+html {
+    scroll-behavior: auto;
+}
+
 
 code {
     font-family:
