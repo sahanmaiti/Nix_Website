@@ -11,6 +11,9 @@ export const metadata = {
     template: "%s | Nix"
   },
   applicationName: "Nix",
+  authors: [{ name: "Sahan Maiti", url: "https://github.com/sahanmaiti" }],
+  creator: "Sahan Maiti",
+  publisher: "Nix",
   description:
     "Nix automatically quits Mac apps when their last window closes. Native SwiftUI utility with per-app rules, grace periods, and zero telemetry.",
   icons: {
@@ -76,9 +79,27 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
+  // Organization entity — gives Google a named brand to associate with this site,
+  // distinct from Vercel (the hosting platform).
+  const jsonLdOrganization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://nix-mu.vercel.app/#organization",
+    name: "Nix",
+    url: "https://nix-mu.vercel.app/",
+    logo: "https://nix-mu.vercel.app/icon.png",
+    description: "Makers of Nix, a native macOS utility that automatically quits apps when their last window closes.",
+    founder: {
+      "@type": "Person",
+      name: "Sahan Maiti",
+      url: "https://github.com/sahanmaiti",
+    },
+  };
+
   const jsonLdSoftware = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
+    "@id": "https://nix-mu.vercel.app/#software",
     name: "Nix",
     operatingSystem: "macOS 14.6 Sonoma or later",
     applicationCategory: "UtilitiesApplication",
@@ -98,19 +119,30 @@ export default function RootLayout({ children }) {
       name: "Sahan Maiti",
       url: "https://github.com/sahanmaiti",
     },
+    // Linking to the Organization entity strengthens brand signal
+    publisher: { "@id": "https://nix-mu.vercel.app/#organization" },
   };
 
+  // WebSite schema with @id — Google's recommended approach for stable entity
+  // identification. alternateName includes the raw subdomain (lowercase) as a
+  // fallback hint, per Google's own guidance for subdomain-hosted sites.
   const jsonLdWebSite = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://nix-mu.vercel.app/#website",
     name: "Nix",
-    alternateName: ["Nix for Mac", "Nix macOS"],
-    url: "https://nix-mu.vercel.app/"
+    alternateName: ["Nix for Mac", "Nix macOS", "nix-mu.vercel.app"],
+    url: "https://nix-mu.vercel.app/",
+    publisher: { "@id": "https://nix-mu.vercel.app/#organization" },
   };
 
   return (
     <html lang="en" className="dark scroll-smooth bg-[#000000] overscroll-none">
       <body className={`${inter.className} min-h-screen bg-[#000000] text-white antialiased selection:bg-white selection:text-black`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
